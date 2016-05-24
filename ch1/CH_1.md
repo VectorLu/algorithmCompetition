@@ -13,7 +13,7 @@ printf("%f\n", 1.0/0.0);
 > inf
 
 3.
-```
+```C
 #include <stdio.h>
 #include <math.h>
 int main()
