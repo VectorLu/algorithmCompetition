@@ -1,4 +1,5 @@
 mac, Xcode
+**some terrible code , see what output they lead**
 
 1. no mistake
 ```C
@@ -41,3 +42,20 @@ printf("%d\n", 0/0);
 ```
 
 > 1606416392
+
+5. if&else nearby
+
+```C
+#include <stdio.h>
+
+int main()
+{
+    if(1)
+        if(0)
+            printf("x\n");
+    else
+        printf("y\n");
+    return 0;
+}
+```
+> y
