@@ -2,7 +2,7 @@ mac, Xcode
 
 1. no mistake
 ```C
-printf（“%f\n", sqrt(-10));
+printf（"%f\n", sqrt(-10));
 ```
 > nan
 
