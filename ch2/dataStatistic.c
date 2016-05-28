@@ -1,7 +1,13 @@
+#define LOCAL
 #include <stdio.h>
 const int INF = 100000;
 int main()
 {
+  #ifdef LOCAL
+    freopen("data.in", "r", stdin);
+    freopen("data.out", "w", stdout);
+  #endif
+
   int x = 0, n = 0, min = INF, max = -INF , sum = 0;
   while(scanf("%d", &x) == 1)
   {
@@ -15,6 +21,7 @@ int main()
     {
       max = x;
     }
+    printf("x = %d , min = %d, max = %d\n", x, min, max);
   }
   printf("max = %d\n", max);
   printf("min = %d\n", min);
