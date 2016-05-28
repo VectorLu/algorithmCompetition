@@ -9,7 +9,7 @@
 int main()
 {
   int a, b, c;
-  int kase = 0;
+  int kase = 1;
   while(scanf("%d%d%d", &a, &b, &c)==3)
   {
     int sum = 0;
