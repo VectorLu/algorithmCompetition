@@ -4,12 +4,13 @@
 //3和5的公倍数除以7余1的最小数是15
 //总数除以3、5、7的余数分别设为a,b,c
 //则sum = a*70 + b*21 + c*15
-//再按范围减去105
+//再按范围减去105(3, 5, 7的最小公倍数)
 #include <stdio.h>
 int main()
 {
   int a, b, c;
-  while(scanf("%d%d%d", &a, &b, &c)!=0)
+  int kase = 0;
+  while(scanf("%d%d%d", &a, &b, &c)==3)
   {
     int sum = 0;
     sum = a*70 + b*21 + c*15;
@@ -19,12 +20,13 @@ int main()
     }
     if(sum < 10)
     {
-      printf("No answer\n");
+      printf("Case%d: No answer\n", kase);
     }
     else
     {
-      printf("%d\n", sum);
+      printf("Case%d: %d\n", kase,sum);
     }
+    kase++;
   }
   return 0;
 }
