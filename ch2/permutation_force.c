@@ -1,3 +1,4 @@
+//The worst codes I have wrote,hahaha.
 #include <stdio.h>
 void permutation()
 {
