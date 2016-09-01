@@ -16,7 +16,7 @@ int main()
   {
     int sum = 0;
     sum = a*70 + b*21 + c*15;
-    while(sum > 100)
+    while(sum > 105)
     {
       sum -= 105;
     }
