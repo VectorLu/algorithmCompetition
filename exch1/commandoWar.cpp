@@ -25,7 +25,10 @@ int main(int argc, char const *argv[]) {
         for (int i = 0; i < n; i++) {
             // 当前任务的开始执行时间
             s += v[i].b;
+            // 更新任务执行完毕时的最晚时间
+            ans = max(ans, s+v[i].j);
         }
+        printf("Case %d: %d\n", kase++, ans);
     }
     return 0;
 }
