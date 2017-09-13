@@ -14,6 +14,7 @@ int main(int argc, char const *argv[]) {
             cnt2[i] = 0;
         }
 
+        // 获取每个字母出现的次数
         for (int i = 0; i < lenA; i++) {
             cnt1[a[i]-'A']++;
             cnt2[b[i]-'A']++;
@@ -21,6 +22,7 @@ int main(int argc, char const *argv[]) {
         sort(cnt1, cnt1+26);
         sort(cnt2, cnt2+26);
 
+        // 如果有一个不相等，就跳出循环
         bool flag = true;
         for (int i = 0; i < 26; i++) {
             if (cnt1[i] != cnt2[i]) {
