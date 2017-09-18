@@ -6,7 +6,6 @@ int n, k, m, a[maxn];
 // 步长是 d，其为 -1 时顺时针，为 1 时逆时针，返回新位置
 int go(int p, int d, int t) {
   while (t--) {
-    // p = (p+d)%n;
     do {p = (p+d+n-1)%n + 1;}
     while (a[p] == 0);
   }
